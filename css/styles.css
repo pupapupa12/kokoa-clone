@@ -8,13 +8,11 @@ body {
 }
 
 .welcome-header {
-    margin-top: 90px 0px;
+    margin-top: 100px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
-    /* 내가 임의로 설정함 (마진 바텀 20px) */
 }
 
 .welcome-header__title {
@@ -42,6 +40,11 @@ body {
     transition: border-color 0.3s ease-in-outs;
 }
 
+#login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+
 #login-form input::placeholder {
     color: rgba(0, 0, 0, 0.4);
 }
@@ -49,3 +52,19 @@ body {
 #login-form input:focus {
     border-color: var(--yellow);
 }
+
+#login-form input[type="submit"] {
+    background-color: var(--yellow);
+    cursor: pointer;
+    padding: 20px 0px;
+}
+
+#login-form a {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 13px;
+}
+
+columm
